@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Rowdies', cursiv;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/* ^ body & site-content ADDS STICKY FOOTER ^  */
+
+/* ^ css reset ^ */
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #6B818C;
+}
+
+header {
+  background-color: #CC2936;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  display: flex;
+  margin-left: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+header h1 {
+  margin-bottom: 2%;
+}
+
+/* ^ Header css ^ */
+
+#bodyContainer {
+  display: flex;
+}
+
+.headerText {
+  padding: 10%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+button {
+  box-sizing: border-box;
+  width: 75px;
+  background-color: #08415C;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0.2vh;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.headerText h2 {
+  font-size: 1.5rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.projectContainer {
+  width: 23%;
+  text-align: center;
+}
+
+#footerContainer {
+  background-color: #CC2936;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .site-content #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+  }
+  #bodyContainer img {
+    margin-left: 95%;
+  }
+  .headerText {
+    margin: 10% 25% 0% 0%;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .site-content #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+  }
+  #bodyContainer img {
+    margin-left: 95%;
+  }
+  .headerText {
+    margin: 10% 25% 0% 0%;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+  }
+  @media only screen and (max-width: 360px) and (max-device-width: 640px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+  @media only screen and (max-width: 1366px) and (max-device-width: 768px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+  @media only screen and (max-width: 1920px) and (max-device-width: 1080px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .headerText {
+      font-size: 15rem;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+}
